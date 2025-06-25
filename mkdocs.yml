@@ -1,1 +1,34 @@
-site_name: My Docs
+site_name: Ingemasoft Centro de Ayuda
+site_description: Centro de Ayuda para el software empresarial Ingemasoft
+site_author: Equipo Ingemasoft
+
+# Carpeta donde están tus .md
+docs_dir: docs
+
+# Carpeta de salida (sitio estático)
+site_dir: site
+
+# Configuración del tema Material
+theme:
+  name: material
+  logo: assets/img/logo_ims_color.png   # (opcional) ruta a tu logo
+  ##favicon: assets/diagrams/favicon.png
+
+# Plugins activos
+plugins:
+  - search                # búsqueda interna
+  - mermaid2              # para diagramas Mermaid
+
+# Navegación principal (ajusta según tus archivos)
+nav:
+  - Overview: 01-overview.md
+  - Arquitectura: 02-Arquitectura.md
+  - Setup: 03-setup.md
+  - Desarrollo: 04-desarrollo.md
+  - Guias V1:
+      - Crear cliente: 05-Guias/v1/crear-clientes.md
+      - Factura electrónica (NDE): 05-Guias/v1/factura-nde.md
+      - Nota crédito electrónica (NCE): 05-guias/v1/nota-credito-nce.md
+  - Esquema del Metadata Schema: 06-metadata-schema.md
+  - Colaboración: 07-contributing.md
+  - Changelog: 08-changelog.md
