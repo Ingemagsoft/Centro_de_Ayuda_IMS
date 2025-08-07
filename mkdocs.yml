@@ -11,7 +11,7 @@ site_dir: site
 # Configuración del tema Material
 theme:
   name: material
-  logo: assets/img/logo_ims_color.png   # (opcional) ruta a tu logo
+  logo: assets/img/logo_ims_blanco.png   # (opcional) ruta a tu logo
   ##favicon: assets/diagrams/favicon.png
 
 # Plugins activos
@@ -25,7 +25,7 @@ nav:
   - Arquitectura: 02-Arquitectura.md
   - Setup: 03-setup.md
   - Desarrollo: 04-desarrollo.md
-  - Guias V1:
+  - Guias v1:
       - Crear cliente: 05-Guias/v1/crear-clientes.md
       - Factura electrónica (NDE): 05-Guias/v1/factura-nde.md
       - Nota crédito electrónica (NCE): 05-guias/v1/nota-credito-nce.md
