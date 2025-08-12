@@ -1,3 +1,16 @@
+---
+id_articulo: ventas_clientes
+modulo: Ventas/Pedidos/Cotizaciones
+submodulo: POS
+titulo: Cómo crear clientes
+version: v1
+palabras_clave: crecion, clientes, proveedores, terceros 
+nivel_usuario: todos
+fecha_creacion: 2025-06-24
+ultimo_update: 2025-08-12
+url_relativa: /ventas/crear-clientes
+---
+
 # Cómo crear un nuevo cliente
 
 ## 1. Objetivo

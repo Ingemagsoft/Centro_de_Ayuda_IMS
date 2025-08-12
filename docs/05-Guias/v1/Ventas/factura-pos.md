@@ -8,7 +8,7 @@ palabras_clave: pos, mostrador, caja, pagos mixtos, factura
 nivel_usuario: todos
 fecha_creacion: 2025-08-12
 ultimo_update: 2025-08-12
-url_relativa: /ventas/pos/facturar
+url_relativa: /ventas/factura-pos
 ---
 
 # Cómo facturar en POS (Mostrador)
