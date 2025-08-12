@@ -19,6 +19,7 @@ plugins:
   - search                # búsqueda interna
   - mermaid2              # para diagramas Mermaid
 
+
 # Navegación principal (ajusta según tus archivos)
 nav:
   - Overview: 01-overview.md
@@ -29,7 +30,7 @@ nav:
       - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
       - Factura electrónica (NDE): 05-Guias/v1/Ventas/factura-nde.md
       - Factura POS: 05-Guias/v1/Ventas/factura-pos.md
-      - Nota crédito electrónica (NCE): 05-guias/v1/Ventas/nota-credito-nce.md
+      - Nota crédito electrónica (NCE): 05-Guias/v1/Ventas/nota-credito-nce.md
   - Esquema del Metadata Schema: 06-metadata-schema.md
   - Colaboración: 07-contributing.md
   - Changelog: 08-changelog.md

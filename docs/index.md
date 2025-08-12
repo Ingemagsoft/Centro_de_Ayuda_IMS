@@ -1,20 +1,71 @@
-# Welcome to MkDocs
+---
+title: Centro de Ayuda IMS
+hide:
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Bienvenida a **IMS – Centro de Ayuda**
 
-## Commands
+Encuentra guías paso a paso, videos y novedades para nuestros 3 productos. Usa la barra de **búsqueda** arriba o entra por producto:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<div class="grid cards" markdown>
 
-## Project layout
+-   <img src="assets/img/Logo_pyme.png" class="logo-card" alt="Logo Pyme">
+    :material-briefcase: **IMS Pyme**  
+    Operación administrativa y ventas para empresas.
+    [:octicons-arrow-right-24: Entrar »](pyme/index.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+-   <img src="assets/img/.png" class="logo-card" alt="Logo Hotel">
+    :material-bed-24: **IMS Hotel**  
+    Operación hotelera (check-in/out, housekeeping).
+    [:octicons-arrow-right-24: Entrar »](hotel/index.md)
 
+-   <img src="assets/img/Logo_telco.png" class="logo-card" alt="Logo Telco">
+    :material-signal-variant: **IMS Telco**  
+    Gestión para telecomunicaciones.
+    [:octicons-arrow-right-24: Entrar »](telco/index.md)
 
-## Project layout
+</div>
+
+---
+
+## Accesos rápidos
+
+- 🧾 [Crear cliente](05-guides/v1/ventas-pedidos-cotizaciones/01-crear-cliente.md)
+- 💡 [Facturar en POS](05-guides/v1/ventas-pedidos-cotizaciones/04-factura-pos.md)
+- 📨 [Factura electrónica (NDE)](05-guides/v1/ventas-pedidos-cotizaciones/02-factura-nde.md)
+
+---
+
+## ¿De qué trata esta guía?
+
+Nuestro objetivo es reducir solicitudes recurrentes con guías claras (texto, imágenes y video). Todo el contenido se mantendrá en español y se actualizará de forma continua.
+
+!!! tip "Consejos y requisitos previos"
+    - Verifica **NIT/DV y correo** del tercero antes de facturar electrónicamente.  
+    - Mantén **series/prefijos DIAN** al día.  
+    - En POS, la **cantidad no acepta decimales**.  
+    - Si un documento es rechazado por DIAN, corrige en el **origen** (tercero, producto, impuestos) y reintenta.
+
+---
+
+## Videos recientes
+
+> Reemplaza `PLAYLIST_ID` por tu playlist (p. ej. “Uploads” del canal). También puedes incrustar un video individual.
+
+<div style="display:flex; gap:16px; flex-wrap:wrap;">
+  <iframe width="420" height="236" src="https://www.youtube.com/embed?listType=playlist&list=PLAYLIST_ID" title="IMS YouTube" frameborder="0" allowfullscreen></iframe>
+  <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID" title="IMS YouTube" frameborder="0" allowfullscreen></iframe>
+</div>
+
+[Visitar nuestro canal »](https://www.youtube.com){ target=_blank }
+
+---
+
+## Novedades y notificaciones
+
+- **[yyyy-mm-dd]** Mejoras en guía POS (pagos mixtos, advertencias DIAN).  
+- **[yyyy-mm-dd]** Publicado piloto **Crear cliente**.  
+- **[yyyy-mm-dd]** Lanzamiento del Centro de Ayuda (versión **v1**).
+
+> Mantén este bloque breve y enlaza al [Changelog](08-changelog.md) para el detalle.
