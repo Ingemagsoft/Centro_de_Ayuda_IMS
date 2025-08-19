@@ -54,11 +54,11 @@ Nuestro objetivo es reducir solicitudes recurrentes con guías claras (texto, im
 > Reemplaza `PLAYLIST_ID` por tu playlist (p. ej. “Uploads” del canal). También puedes incrustar un video individual.
 
 <div style="display:flex; gap:16px; flex-wrap:wrap;">
-  <iframe width="420" height="236" src="https://www.youtube.com/embed?listType=playlist&list=PLAYLIST_ID" title="IMS YouTube" frameborder="0" allowfullscreen></iframe>
-  <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID" title="IMS YouTube" frameborder="0" allowfullscreen></iframe>
+  <iframe width="420" height="236" src="https://www.youtube.com/embed/Mm00AaDx_iA?si=fB5R8GwpSSXFCMSx" title="IMS YouTube" frameborder="0" allowfullscreen></iframe>
+  <iframe width="420" height="236" src="https://www.youtube.com/embed/JmBatB-BHtw?si=IMSBblChL8U3Dl0p" title="IMS YouTube" frameborder="0" allowfullscreen></iframe>
 </div>
 
-[Visitar nuestro canal »](https://www.youtube.com){ target=_blank }
+[Visitar nuestro canal »](https://www.youtube.com/@Ingemasoft){ target=_blank }
 
 ---
 
