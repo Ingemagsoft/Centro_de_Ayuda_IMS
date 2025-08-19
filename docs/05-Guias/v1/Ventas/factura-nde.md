@@ -46,9 +46,16 @@ Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**
 ![Cliente](../../../assets/img/NDE/03-cliente.png)
 ![Tipo_Pago](../../../assets/img/NDE/04-tipo-pago.png)
 
-### FACTURA EN 3 PASOS
-> Sigue estos 3 pasos para completar la factura exitosamente.
-![Pasos](../../../assets/img/NDE/05-pasos-factura.png)
+!!! info "Condición de pago: cómo afecta a los **pagos**"
+    - **Crédito** → al crear el documento se registra automáticamente un pago **“Por cancelar”** por el total.  
+      - Ese registro **no se puede borrar** mientras la condición siga en **Crédito**.
+    - **Contado** → podrás cargar **cualquier medio de pago** (efectivo, tarjeta, transferencia, etc.), incluso **pagos mixtos**, en el Paso 3 (*Medios de pago*).
+    - ¿Te equivocaste? Cambia la condición a **Contado**, guarda/actualiza y vuelve al Paso 3 para **eliminar “Por cancelar”** y registrar los pagos reales.
+
+!!! abstract "FACTURA EN 3 PASOS"
+    Sigue estos 3 pasos para completar la factura exitosamente.
+    
+    ![Pasos](../../../assets/img/NDE/05-pasos-factura.png)
 
 ### D. Paso 1 → Productos
 1. En **Código del producto**, selecciona el ítem.

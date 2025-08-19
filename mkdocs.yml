@@ -12,12 +12,17 @@ site_dir: site
 theme:
   name: material
   logo: assets/img/logo_ims_blanco.png   # (opcional) ruta a tu logo
-  ##favicon: assets/diagrams/favicon.png
+  favicon: assets/img/logo_ims_color.png
 
 # Plugins activos
 plugins:
   - search                # búsqueda interna
   - mermaid2              # para diagramas Mermaid
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details      # para los colapsables "???"
+  - pymdownx.superfences
 
 
 # Navegación principal (ajusta según tus archivos)

@@ -20,8 +20,8 @@ Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos 
 - Rol con permisos de **POS / Caja**.
 - (Si aplica) **Caja abierta** y dispositivos configurados.
 
-> **🛑 Advertencia**
-> Si vas a emitir **factura electrónica** desde POS, valida que el **tercero** tenga **NIT/DV** y **correo** correctos. De lo contrario, la DIAN rechazará el documento (“Error en tercero”).
+!!! warning "Advertencia"
+    Si vas a emitir **factura electrónica** desde POS, valida que el **tercero** tenga **NIT/DV** y **correo** correctos. De lo contrario, la **DIAN** rechazará el documento (“Error en tercero”).
 
 ---
 
