@@ -75,28 +75,30 @@ Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos 
 
 ---
 
-## 4. Campos y validaciones
+## 4. Tabla técnica completa de campos
 
-| Campo en pantalla                 | Oblig./Opc. | Tipo             | Validación / Reglas (si aplica)                                | Notas de negocio |
-|----------------------------------|-------------|------------------|-----------------------------------------------------------------|------------------|
-| **Cliente**                      | Obligatorio | Texto/Búsqueda   | Debe existir o crearse; **NIT/DV válidos**                      |                  |
-| **Fecha de factura**             | Obligatorio | Fecha            | **Autocompletado**                                              |                  |
-| **Vendedor (si aplica)**         | Obligatorio | Dropdown         | Autocompletado; **opciones activas**                           | Cambiar si es necesario |
-| **Lista de precios**             | Obligatorio | Dropdown         | Autocompletado; **debe existir**; **recalcula precios**        | Cambiar si es necesario |
-| **Condiciones de pago**          | Obligatorio | Dropdown/Texto   | **Catálogo activo**                                             |                  |
-| **Ítems: Seleccione un producto**| Obligatorio | Texto/Búsqueda   | Debe existir en **productos**                                   |                  |
-| **Ítems: Cantidad**              | Obligatorio | Numérico         | **> 0; no acepta decimales**                                    |                  |
-| **Ítems: Valor unitario**        | Obligatorio | Numérico         | `≥ 0`; depende de **lista de precios**                          |                  |
-| **Ítems: Impuesto (IVA/INC/ICA)**| Obligatorio | Dropdown         | Según producto; **tasas válidas DIAN**                          |                  |
-| **Descuento (si aplica)**        | Opcional    | Numérico/%       | Límite por **rol/regla**                                        |                  |
-| **Detalle adicional**            | Opcional    | Texto            | Máx. caracteres                                                 |                  |
-| **Botón Cargar (ítem)**          | —           | Acción           | Aplica **validaciones previas**                                 |                  |
-| **Tipo de pago**                 | Obligatorio | Dropdown/Texto   | **Catálogo activo**                                             |                  |
-| **Valor (pago)**                 | Obligatorio | Numérico         | `> 0`; suma total debe **cuadrar**                              |                  |
-| **Botón Cargar pago**            | —           | Acción           | **Confirmación del pago**                                       |                  |
-| **Botón Cerrar D.E. POS**        | —           | Acción           | **Graba y cierra** la venta POS                                 |                  |
-| **Botón Factura electrónica**    | —           | Acción           | **Envío a DIAN**; bloquea si faltan obligatorios                |                  |
-| **Botón Cancelar**               | —           | Acción           | **Salir** del módulo                                            |                  |
+??? info "Ver tabla completa de campos (detalle técnico)"
+
+    | Campo en pantalla                 | Oblig./Opc. | Tipo             | Validación / Reglas (si aplica)                                | Notas de negocio |
+    |----------------------------------|-------------|------------------|-----------------------------------------------------------------|------------------|
+    | **Cliente**                      | Obligatorio | Texto/Búsqueda   | Debe existir o crearse; **NIT/DV válidos**                      |                  |
+    | **Fecha de factura**             | Obligatorio | Fecha            | **Autocompletado**                                              |                  |
+    | **Vendedor (si aplica)**         | Obligatorio | Dropdown         | Autocompletado; **opciones activas**                           | Cambiar si es necesario |
+    | **Lista de precios**             | Obligatorio | Dropdown         | Autocompletado; **debe existir**; **recalcula precios**        | Cambiar si es necesario |
+    | **Condiciones de pago**          | Obligatorio | Dropdown/Texto   | **Catálogo activo**                                             |                  |
+    | **Ítems: Seleccione un producto**| Obligatorio | Texto/Búsqueda   | Debe existir en **productos**                                   |                  |
+    | **Ítems: Cantidad**              | Obligatorio | Numérico         | **> 0; no acepta decimales**                                    |                  |
+    | **Ítems: Valor unitario**        | Obligatorio | Numérico         | `≥ 0`; depende de **lista de precios**                          |                  |
+    | **Ítems: Impuesto (IVA/INC/ICA)**| Obligatorio | Dropdown         | Según producto; **tasas válidas DIAN**                          |                  |
+    | **Descuento (si aplica)**        | Opcional    | Numérico/%       | Límite por **rol/regla**                                        |                  |
+    | **Detalle adicional**            | Opcional    | Texto            | Máx. caracteres                                                 |                  |
+    | **Botón Cargar (ítem)**          | —           | Acción           | Aplica **validaciones previas**                                 |                  |
+    | **Tipo de pago**                 | Obligatorio | Dropdown/Texto   | **Catálogo activo**                                             |                  |
+    | **Valor (pago)**                 | Obligatorio | Numérico         | `> 0`; suma total debe **cuadrar**                              |                  |
+    | **Botón Cargar pago**            | —           | Acción           | **Confirmación del pago**                                       |                  |
+    | **Botón Cerrar D.E. POS**        | —           | Acción           | **Graba y cierra** la venta POS                                 |                  |
+    | **Botón Factura electrónica**    | —           | Acción           | **Envío a DIAN**; bloquea si faltan obligatorios                |                  |
+    | **Botón Cancelar**               | —           | Acción           | **Salir** del módulo                                            |                  |
 
 ---
 

@@ -45,9 +45,14 @@ Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**
 
 ### C. Datos del cliente
 - **Cliente**: búscalo por NIT/Nombre o usa **Crear tercero**.  
+![Cliente](../../../assets/img/NDE/03-cliente.png)
+
+??? info "Creacion de clientes"
+    Aprende a crear un **tercero** correctamente.  
+    👉 [Crear cliente / tercero](./crear-clientes.md)
+    
 - (Si aplica) **Vendedor**, **Lista de precios** y **Condiciones de pago** (se autocompletan; ajusta si corresponde).  
 - Clic en **Continuar**.  
-![Cliente](../../../assets/img/NDE/03-cliente.png)
 ![Tipo_Pago](../../../assets/img/NDE/04-tipo-pago.png)
 
 !!! info "Condición de pago: cómo afecta a los **pagos**"
@@ -101,37 +106,39 @@ Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**
 
 ## 4) Campos y validaciones (NDE)
 
-| Campo en pantalla               | Oblig./Opc. | Tipo            | Validación / Reglas (si aplica)                                           | Notas de negocio |
-|--------------------------------|-------------|-----------------|----------------------------------------------------------------------------|------------------|
-| **Documento (prefijo/serie)**  | Obligatorio | Dropdown/Texto  | Debe existir en parametrización; sin espacios extras                       | El nombre varía según empresa |
-| **Número**                     | Obligatorio | Auto/Texto      | Autonumera; restricción de edición según rol                               | Consecutivo de la factura |
-| **Fecha de factura**           | Obligatorio | Fecha           | Autocompletado; **no** puede ser futura                                    |                  |
-| **Aceptar**                    | —           | Acción          | Crea nueva factura (borrador)                                              |                  |
-| **Cliente**                    | Obligatorio | Texto/Búsqueda  | Debe existir o crearse; **NIT/DV válidos**                                  |                  |
-| **Vendedor (si aplica)**       | Obligatorio | Dropdown        | Autocompletado; opciones activas                                           | Cambiar si es necesario |
-| **Lista de precios**           | Obligatorio | Dropdown        | Autocompletado; debe existir; **recalcula** precios                         | Cambiar si es necesario |
-| **Condiciones de pago**        | Obligatorio | Dropdown/Texto  | Catálogo activo; **define el comportamiento de pagos**: Crédito ⇒ crea “Por cancelar” (bloqueado). Contado ⇒ permite cargar medios de pago.                                                            |                  |
-| **Continuar**                  | —           | Acción          | Confirma cliente                                                            |                  |
-| **Paso 1 – Productos**         | —           | Acción          | Abre sección de registro de productos                                      |                  |
-| **Ítem: Código del producto**  | Obligatorio | Texto/Búsqueda  | Debe existir en productos                                                  |                  |
-| **Detalle adicional**          | Opcional    | Texto           | Máx. caracteres                                                            |                  |
-| **Ítem: Cantidad**             | Obligatorio | Numérico        | `> 0`; **decimales según parametrización**                                 |                  |
-| **Ítem: Valor unitario**       | Obligatorio | Numérico        | `≥ 0`; depende de lista                                                    |                  |
-| **Ítem: Impuesto (IVA/INC/ICA)**| Obligatorio| Dropdown        | Según producto; tasas válidas DIAN                                         |                  |
-| **Descuento (si aplica)**      | Opcional    | Numérico/%      | Límite por rol/regla                                                       |                  |
-| **Cargar Producto**            | —           | Acción          | Valida y agrega la línea                                                   |                  |
-| **Borrar ítems**               | —           | Acción          | Elimina todas las líneas registradas                                       |                  |
-| **Paso 2 – Retenciones**       | —           | Acción          | Abre sección de retenciones                                                |                  |
-| **Tabla de retenciones**       | Opcional    | Búsqueda        | Aplica retención si corresponde                                            |                  |
-| **Paso 3 – Medios de pago**    | —           | Acción          | Abre sección de pagos                                                      |                  |
-| **Tipo de pago**               | Obligatorio | Dropdown/Texto  | Catálogo activo; **sólo editable si la condición es Contado**.                                                            |                  |
-| **Valor (pago)**               | Obligatorio | Numérico        | `> 0`; suma total debe **cuadrar**                                         |                  |
-| **Cargar tipo de pago**        | —           | Acción          | Confirmación del pago                                                      |                  |
-| **Grabar**                     | —           | Acción          | Guarda **sin** enviar a DIAN                                               |                  |
-| **Borrar**                     | —           | Acción          | Limpia el documento para sobreescribir                                     |                  |
-| **Anular**                     | —           | Acción          | Anulación total del documento                                              |                  |
-| **Cerrar**                     | —           | Acción          | **Envía a DIAN**; maneja reintentos/errores                                |                  |
-| **Salir**                      | —           | Acción          | Salir del módulo                                                           |                  |
+??? info "Ver tabla completa de campos (detalle técnico)"
+
+    | Campo en pantalla               | Oblig./Opc. | Tipo            | Validación / Reglas (si aplica)                                           | Notas de negocio |
+    |--------------------------------|-------------|-----------------|----------------------------------------------------------------------------|------------------|
+    | **Documento (prefijo/serie)**  | Obligatorio | Dropdown/Texto  | Debe existir en parametrización; sin espacios extras                       | El nombre varía según empresa |
+    | **Número**                     | Obligatorio | Auto/Texto      | Autonumera; restricción de edición según rol                               | Consecutivo de la factura |
+    | **Fecha de factura**           | Obligatorio | Fecha           | Autocompletado; **no** puede ser futura                                    |                  |
+    | **Aceptar**                    | —           | Acción          | Crea nueva factura (borrador)                                              |                  |
+    | **Cliente**                    | Obligatorio | Texto/Búsqueda  | Debe existir o crearse; **NIT/DV válidos**                                  |                  |
+    | **Vendedor (si aplica)**       | Obligatorio | Dropdown        | Autocompletado; opciones activas                                           | Cambiar si es necesario |
+    | **Lista de precios**           | Obligatorio | Dropdown        | Autocompletado; debe existir; **recalcula** precios                         | Cambiar si es necesario |
+    | **Condiciones de pago**        | Obligatorio | Dropdown/Texto  | Catálogo activo; **define el comportamiento de pagos**: Crédito ⇒ crea “Por cancelar” (bloqueado). Contado ⇒ permite cargar medios de pago.                                                            |                  |
+    | **Continuar**                  | —           | Acción          | Confirma cliente                                                            |                  |
+    | **Paso 1 – Productos**         | —           | Acción          | Abre sección de registro de productos                                      |                  |
+    | **Ítem: Código del producto**  | Obligatorio | Texto/Búsqueda  | Debe existir en productos                                                  |                  |
+    | **Detalle adicional**          | Opcional    | Texto           | Máx. caracteres                                                            |                  |
+    | **Ítem: Cantidad**             | Obligatorio | Numérico        | `> 0`; **decimales según parametrización**                                 |                  |
+    | **Ítem: Valor unitario**       | Obligatorio | Numérico        | `≥ 0`; depende de lista                                                    |                  |
+    | **Ítem: Impuesto (IVA/INC/ICA)**| Obligatorio| Dropdown        | Según producto; tasas válidas DIAN                                         |                  |
+    | **Descuento (si aplica)**      | Opcional    | Numérico/%      | Límite por rol/regla                                                       |                  |
+    | **Cargar Producto**            | —           | Acción          | Valida y agrega la línea                                                   |                  |
+    | **Borrar ítems**               | —           | Acción          | Elimina todas las líneas registradas                                       |                  |
+    | **Paso 2 – Retenciones**       | —           | Acción          | Abre sección de retenciones                                                |                  |
+    | **Tabla de retenciones**       | Opcional    | Búsqueda        | Aplica retención si corresponde                                            |                  |
+    | **Paso 3 – Medios de pago**    | —           | Acción          | Abre sección de pagos                                                      |                  |
+    | **Tipo de pago**               | Obligatorio | Dropdown/Texto  | Catálogo activo; **sólo editable si la condición es Contado**.                                                            |                  |
+    | **Valor (pago)**               | Obligatorio | Numérico        | `> 0`; suma total debe **cuadrar**                                         |                  |
+    | **Cargar tipo de pago**        | —           | Acción          | Confirmación del pago                                                      |                  |
+    | **Grabar**                     | —           | Acción          | Guarda **sin** enviar a DIAN                                               |                  |
+    | **Borrar**                     | —           | Acción          | Limpia el documento para sobreescribir                                     |                  |
+    | **Anular**                     | —           | Acción          | Anulación total del documento                                              |                  |
+    | **Cerrar**                     | —           | Acción          | **Envía a DIAN**; maneja reintentos/errores                                |                  |
+    | **Salir**                      | —           | Acción          | Salir del módulo                                                           |                  |
 
 ---
 
