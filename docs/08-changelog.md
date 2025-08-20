@@ -24,3 +24,15 @@
 ### Fixed
 - (si aplica) Ajustes menores de rutas de imágenes y texto.
 
+## [1.0.2] - 2025-08-20
+### Added
+- Guía **Creación de clientes** reescrita con nuevas pestañas (Otros datos, Condiciones de venta, Control de crédito, Datos fiscales) e imágenes.
+### Changed
+- Aclaraciones de reglas (empresa vs persona), validaciones de NIT/DV y correo.
+
+## [1.0.3] - 2025-08-20
+### Added
+- Enlaces cruzados entre **Crear cliente**, **POS**, **NDE** (y placeholder para **NCE**).
+### Changed
+- Avisos de prerrequisitos y errores DIAN con links directos a edición de terceros.
+

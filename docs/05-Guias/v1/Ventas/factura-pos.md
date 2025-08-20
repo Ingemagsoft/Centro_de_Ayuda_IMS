@@ -16,6 +16,10 @@ url_relativa: /ventas/factura-pos
 ## 1. Objetivo
 Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos mixtos**) y, si aplica, **generar factura electrónica** para la DIAN.
 
+!!! info "Prerequisito"
+    El **cliente** debe existir y tener **NIT/DV** (si aplica) y **correo** válidos.  
+    👉 [Crear cliente / tercero](./crear-clientes.md)
+
 ## 2. Requisitos previos
 - Rol con permisos de **POS / Caja**.
 - (Si aplica) **Caja abierta** y dispositivos configurados.
@@ -129,3 +133,10 @@ Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos 
 
 - **¿POS siempre muestra “Factura electrónica”?**  
   Sí. Si faltan obligatorios, el sistema **bloquea el envío** y te pide completarlos.
+
+---
+
+## Relacionados
+- 📨 ¿Necesitas factura electrónica administrativa? → [Emitir NDE](./factura-nde.md)
+- 🧾 ¿El cliente no existe aún? → [Crear cliente](./crear-clientes.md)
+- ↩️ ¿Devolver una venta? → [NCE](./nota-credito-nce.md)

@@ -12,7 +12,7 @@ site_dir: site
 theme:
   name: material
   logo: assets/img/logo_ims_blanco.png   # (opcional) ruta a tu logo
-  favicon: assets/img/logo_ims_color.png
+  favicon: assets/img/favicon-32.png
 
 # Plugins activos
 plugins:
@@ -29,7 +29,7 @@ markdown_extensions:
 nav:
   - Overview: 01-overview.md
   - Arquitectura: 02-Arquitectura.md
-  - Setup: 03-setup.md
+  - Setup: 03-Setup.md
   - Desarrollo: 04-desarrollo.md
   - Guias v1:
     - Modulo Ventas:
@@ -39,6 +39,6 @@ nav:
       - Nota crédito electrónica (NCE): 05-Guias/v1/Ventas/nota-credito-nce.md
     - Modulo Compras:
       - Compras: 05-Guias/v1/Compras/Compras.md
-  - Esquema del Metadata Schema: 06-metadata-schema.md
-  - Colaboración: 07-contributing.md
+  - Esquema del Metadata Schema: 06-metadata-esquema.md
+  - Colaboración: 07-Colaboracion.md
   - Changelog: 08-changelog.md

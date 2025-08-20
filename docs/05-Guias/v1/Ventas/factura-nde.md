@@ -16,6 +16,10 @@ url_relativa: /ventas/nde/facturar
 ## 1) Objetivo
 Generar y enviar una **factura electrónica** a la **DIAN** desde el módulo administrativo **NDE**.
 
+!!! info "Prerequisito"
+    Verifica que el **tercero** tenga **NIT/DV** (si aplica) y **correo** correctos.  
+    👉 [Crear cliente / tercero](./crear-clientes.md)
+
 ## 2) Requisitos previos
 - Prefijos/series **autorizados por DIAN** y vigentes.
 - **Tercero** creado correctamente (NIT/DV y correo válidos).
@@ -137,6 +141,10 @@ Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**
   *Causa:* NIT/DV/Correo inválidos o tipo de documento incorrecto.  
   *Solución:* Corrige la ficha del **tercero** y vuelve a emitir.
 
+!!! warning "Errores por datos del tercero"
+    Si el rechazo DIAN menciona **adquirente/tercero**, corrige el registro del cliente y **reintenta**:  
+    👉 [Cómo crear/editar cliente](./crear-clientes.md)
+
 - **“Fecha fuera de rango / inválida”**  
   *Causa:* fecha futura o fuera del rango permitido.  
   *Solución:* Ajusta la **Fecha de factura** dentro del rango DIAN.
@@ -169,3 +177,10 @@ Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**
 - **El sistema me creó “Por cancelar” y no me deja borrarlo. ¿Qué hago?**  
   Eso ocurre cuando la **Condición de pago = Crédito**. Cambia la condición a **Contado**, guarda/actualiza, luego carga los pagos que correspondan (efectivo, tarjeta, transferencia…).  
   Si la venta **sí es a crédito**, deja “Por cancelar” tal cual y no cargues otros pagos aquí.
+
+---
+
+## Relacionados
+- 💡 ¿Prefieres mostrador? → [Facturar en POS](./factura-pos.md)
+- 🧾 ¿Actualizar datos del cliente? → [Crear/editar cliente](./crear-clientes.md)
+- ↩️ ¿Reversar total o parcial? → [Nota crédito (NCE)](./nota-credito-nce.md)

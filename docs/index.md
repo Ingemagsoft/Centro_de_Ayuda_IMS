@@ -31,9 +31,9 @@ Encuentra guías paso a paso, videos y novedades para nuestros 3 productos. Usa 
 
 ## Accesos rápidos
 
-- 🧾 [Crear cliente](05-guides/v1/ventas-pedidos-cotizaciones/01-crear-cliente.md)
-- 💡 [Facturar en POS](05-guides/v1/ventas-pedidos-cotizaciones/04-factura-pos.md)
-- 📨 [Factura electrónica (NDE)](05-guides/v1/ventas-pedidos-cotizaciones/02-factura-nde.md)
+- 🧾 [Crear cliente](05-Guias/v1/Ventas/crear-clientes.md)
+- 💡 [Facturar en POS](05-Guias/v1/Ventas/factura-pos.md)
+- 📨 [Factura electrónica (NDE)](05-Guias/v1/Ventas/factura-nde.md)
 
 ---
 
