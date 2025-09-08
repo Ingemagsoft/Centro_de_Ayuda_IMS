@@ -11,8 +11,37 @@ site_dir: site
 # Configuración del tema Material
 theme:
   name: material
+  language: es
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
   logo: assets/img/logo_ims_blanco.png   # (opcional) ruta a tu logo
   favicon: assets/img/favicon-32.png
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.footer
+    - navigation.indexes
+    - toc.integrate
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - header.autohide
 
 # Plugins activos
 plugins:
@@ -23,6 +52,15 @@ markdown_extensions:
   - admonition
   - pymdownx.details      # para los colapsables "???"
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - styles/ims-overrides.css
+
 
 
 # Navegación principal (ajusta según tus archivos)
@@ -35,6 +73,8 @@ nav:
     - Modulo Ventas:
       - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
       - Factura electrónica (NDE): 05-Guias/v1/Ventas/factura-nde.md
+      - Devoluciones / NCE:
+        - Guia principal: 05-Guias/v1/Ventas/nce/index.md
       - Factura POS: 05-Guias/v1/Ventas/factura-pos.md
       - Nota crédito electrónica (NCE): 05-Guias/v1/Ventas/nota-credito-nce.md
     - Modulo Compras:
