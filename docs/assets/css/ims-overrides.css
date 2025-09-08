@@ -1,0 +1,28 @@
+/* densidad compacta */
+.md-content, .md-typeset { --md-text-font-size: 0.95rem; }
+.md-grid { max-width: 1200px; }
+
+/* hero simple */
+.hero { text-align:center; margin: 1.2rem 0 2rem; }
+.hero img { opacity: .95; }
+
+/* focus visible y accesible */
+:focus-visible { outline: 3px solid var(--md-primary-fg-color); outline-offset: 2px; }
+
+/* cards más compactas */
+.grid.cards > ul > li { padding: .9rem 1rem; }
+
+/* chips de status (puedes usarlos como spans) */
+.chip { display:inline-block; padding:.15rem .5rem; border-radius:999px; font-size:.8rem; line-height:1; }
+.chip--ok { background:#e6f6ec; color:#1b7f4a; }
+.chip--new { background:#e8f0fe; color:#2949c7; }
+.chip--soon{ background:#eee; color:#666; }
+
+/* imágenes fluidas */
+.md-typeset img { border-radius: .4rem; }
+
+/* botones centrados */
+.btn-center {
+  text-align: center;
+  margin-top: 1rem;
+}

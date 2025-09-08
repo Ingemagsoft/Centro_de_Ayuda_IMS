@@ -10,6 +10,10 @@ fecha_creacion: 2025-08-12
 ultimo_update: 2025-08-12
 url_relativa: /ventas/nde/facturar
 ---
+:material-puzzle-outline: **Módulo:** Ventas/Pedidos/Cotizaciones  
+:material-tag-outline: **Versión:** v1  
+:material-clock-outline: **Tiempo de lectura:** 6–8 min  
+:material-account-circle-outline: **Nivel:** Todos 
 
 # Cómo emitir una factura electrónica (NDE)
 
