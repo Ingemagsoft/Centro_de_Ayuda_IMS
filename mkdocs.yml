@@ -12,7 +12,7 @@ site_dir: site
 theme:
   name: material
   language: es
-  logo: assets/img/logo_ims_blanco.png   # (opcional) ruta a tu logo
+  logo: assets/img/logos/logo_ims_blanco.png   # (opcional) ruta a tu logo
   favicon: assets/img/favicon-32.png
   font:
     text: Inter
@@ -73,52 +73,26 @@ nav:
   - Pyme:
       - Empieza aquí: pyme/index.md
       - Procesos básicos:
-          - Crear cliente: pyme/basicos/crear-cliente.md
-          - Facturar: pyme/basicos/facturar.md
-          - Compras: pyme/basicos/compras.md
-          - Inventario: pyme/basicos/inventario.md
+          - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
+          - Facturar (NDE): 05-Guias/v1/Ventas/factura-nde.md
+          - Facturar en POS: 05-Guias/v1/Ventas/factura-pos.md
       - Procesos adicionales:
-          - Notas débito/crédito: pyme/adicionales/nd-nc.md
-          - Cuentas por cobrar: pyme/adicionales/cxc.md
-          - Cuentas por pagar: pyme/adicionales/cxp.md
+          - Nota crédito (hub): 05-Guias/v1/Ventas/nce/index.md
+          - Nota crédito – Contado (ref): 05-Guias/v1/Ventas/nce/contado-ref.md
+          - Nota crédito – Contado (sin ref): 05-Guias/v1/Ventas/nce/contado-sin-ref.md
+          - Nota crédito – Crédito (ref): 05-Guias/v1/Ventas/nce/credito-ref.md
+          - Nota crédito – Crédito (sin ref): 05-Guias/v1/Ventas/nce/credito-sin-ref.md
   - Hotel:
       - Empieza aquí: hotel/index.md
-      - Procesos básicos:
-          - Check-in/Facturación: hotel/basicos/checkin-facturacion.md
-          - Compras: hotel/basicos/compras.md
-          - Inventario: hotel/basicos/inventario.md
-      - Procesos adicionales:
-          - Cuentas por cobrar: hotel/adicionales/cxc.md
-          - Cuentas por pagar: hotel/adicionales/cxp.md
   - Telco:
       - Empieza aquí: telco/index.md
-      - Procesos básicos:
-          - Clientes/Activaciones: telco/basicos/clientes-activaciones.md
-          - Facturar: telco/basicos/facturar.md
-          - Inventario: telco/basicos/inventario.md
-      - Procesos adicionales:
-          - Cuentas por cobrar: telco/adicionales/cxc.md
-          - Cuentas por pagar: telco/adicionales/cxp.md
   - Novedades: updates/index.md
-
-
-
-
-#nav:
-#  - Overview: 01-overview.md
-#  - Arquitectura: 02-Arquitectura.md
-#  - Setup: 03-Setup.md
-#  - Desarrollo: 04-desarrollo.md
-#  - Guias v1:
-#    - Modulo Ventas:
-#      - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
-#      - Factura electrónica (NDE): 05-Guias/v1/Ventas/factura-nde.md
-#      - Devoluciones / NCE:
-#        - Guia principal: 05-Guias/v1/Ventas/nce/index.md
-#      - Factura POS: 05-Guias/v1/Ventas/factura-pos.md
-#      - Nota crédito electrónica (NCE): 05-Guias/v1/Ventas/nota-credito-nce.md
-#    - Modulo Compras:
-#      - Compras: 05-Guias/v1/Compras/Compras.md
-#  - Esquema del Metadata Schema: 06-metadata-esquema.md
-#  - Colaboración: 07-Colaboracion.md
-#  - Changelog: 08-changelog.md
+  # Solo interno (no incluir en el público)
+  - Proyecto (interno):
+      - Overview: 01-overview.md
+      - Arquitectura: 02-Arquitectura.md
+      - Setup: 03-Setup.md
+      - Desarrollo: 04-desarrollo.md
+      - Metadata Schema: 06-metadata-esquema.md
+      - Colaboración: 07-Colaboracion.md
+      - Changelog: 08-changelog.md

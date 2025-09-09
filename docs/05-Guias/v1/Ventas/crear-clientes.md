@@ -10,6 +10,20 @@ fecha_creacion: 2025-08-20
 ultimo_update: 2025-08-20
 url_relativa: /ventas/terceros/crear
 ---
+<p class="chips">
+  <span class="chip chip--ok">v1</span>
+  <span class="chip chip--new">4–6 min</span>
+</p>
+
+!!! tip "Qué vas a lograr"
+    Crear un **tercero** correcto (empresa o persona) listo para facturar **sin rechazos DIAN**.
+
+!!! info "Prerrequisitos"
+    - Identificación: **NIT + DV** (empresa) o **Cédula** (persona).  
+    - **Correo** válido (para FE).  
+    - Sugerido: **RUT** para configurar **Datos fiscales**.
+
+> **Diferencia práctica:** Empresa ⇒ usa **Razón social** (con DV). Persona ⇒ **Nombres y apellidos** (sin DV).
 
 # Cómo crear un cliente (tercero)
 
@@ -171,7 +185,11 @@ Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar 
   Revisa que **correo, NIT/DV y ciudad** estén completos. Los errores de DIAN suelen indicar qué campo falta.
 
 ---
-
+!!! warning "Campos críticos para DIAN"
+    - **NIT/CC + DV (si aplica)**  
+    - **Correo electrónico**  
+    Errores aquí ⇒ *rechazo* al enviar factura electrónica.
+    
 ## Relacionados
 - 💡 [Facturar en POS](./factura-pos.md)
 - 📨 [Factura electrónica (NDE)](./factura-nde.md)
