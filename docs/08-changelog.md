@@ -36,3 +36,6 @@
 ### Changed
 - Avisos de prerrequisitos y errores DIAN con links directos a edición de terceros.
 
+## [1.0.4] - 2025-09-08
+### Changed
+- Estilos nuevos aplicados a la guia y guias actuales
