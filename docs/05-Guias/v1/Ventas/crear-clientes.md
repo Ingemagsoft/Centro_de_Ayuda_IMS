@@ -10,10 +10,13 @@ fecha_creacion: 2025-08-20
 ultimo_update: 2025-08-20
 url_relativa: /ventas/terceros/crear
 ---
+
 <p class="chips">
   <span class="chip chip--ok">v1</span>
   <span class="chip chip--new">4–6 min</span>
 </p>
+
+# Cómo crear un cliente (tercero)
 
 !!! tip "Qué vas a lograr"
     Crear un **tercero** correcto (empresa o persona) listo para facturar **sin rechazos DIAN**.
@@ -24,8 +27,6 @@ url_relativa: /ventas/terceros/crear
     - Sugerido: **RUT** para configurar **Datos fiscales**.
 
 > **Diferencia práctica:** Empresa ⇒ usa **Razón social** (con DV). Persona ⇒ **Nombres y apellidos** (sin DV).
-
-# Cómo crear un cliente (tercero)
 
 ## 1) Objetivo
 Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar rechazos de **factura electrónica** y agilizar ventas.
@@ -52,7 +53,6 @@ Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar 
 
 - Menú: **Ventas/Pedidos/Cotizaciones → Creación de clientes**  
   ![Acceso](../../../assets/img/clientes/01-menu-creacion-cliente.png)
-
 - Alternativas: **Crear tercero** (abre el mismo formulario en ventana modal).  
   ![Crear tercero desde NDE](../../../assets/img/clientes/10-acceso-creacion-ventana.png)
 
@@ -183,14 +183,26 @@ Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar 
 
 - **¿No me deja facturar?**  
   Revisa que **correo, NIT/DV y ciudad** estén completos. Los errores de DIAN suelen indicar qué campo falta.
-
+  
 ---
-!!! warning "Campos críticos para DIAN"
-    - **NIT/CC + DV (si aplica)**  
-    - **Correo electrónico**  
-    Errores aquí ⇒ *rechazo* al enviar factura electrónica.
-    
-## Relacionados
-- 💡 [Facturar en POS](./factura-pos.md)
-- 📨 [Factura electrónica (NDE)](./factura-nde.md)
-- ↩️ [Nota crédito electrónica (NCE)](./nota-credito-nce.md)
+!!! seealso "Guías relacionadas"
+
+    <div class="grid cards" markdown>
+
+    -   :material-cash-register: **Facturar en POS** <span class="chip chip--ok">Básico</span>
+
+        Aprende a emitir facturas desde el punto de venta.  
+        [:material-arrow-right: Ver guía](./factura-pos.md) 
+
+    -   :material-receipt: **Factura electrónica (NDE)**  <span class="chip chip--new">Nuevo</span>
+
+        Cómo emitir facturas electrónicas y enviarlas a DIAN.  
+        [:material-arrow-right: Ver guía](./factura-nde.md)
+
+    -   :material-file-restore: **Nota crédito electrónica (NCE)**  <span class="chip chip--soon">Avanzado</span>
+
+        Anula o corrige facturas con notas crédito.  
+        [:material-arrow-right: Ver guía](./nota-credito-nce.md)
+
+    </div>
+

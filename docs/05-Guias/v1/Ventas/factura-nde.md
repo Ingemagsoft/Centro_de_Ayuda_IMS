@@ -10,27 +10,24 @@ fecha_creacion: 2025-08-12
 ultimo_update: 2025-08-12
 url_relativa: /ventas/nde/facturar
 ---
-:material-puzzle-outline: **Módulo:** Ventas/Pedidos/Cotizaciones  
-:material-tag-outline: **Versión:** v1  
-:material-clock-outline: **Tiempo de lectura:** 6–8 min  
-:material-account-circle-outline: **Nivel:** Todos 
+<p class="chips">
+  <span class="chip chip--ok">v1</span>
+  <span class="chip chip--new">5–7 min</span>
+</p>
 
 # Cómo emitir una factura electrónica (NDE)
 
-## 1) Objetivo
-Generar y enviar una **factura electrónica** a la **DIAN** desde el módulo administrativo **NDE**.
-
-!!! info "Prerequisito"
-    Verifica que el **tercero** tenga **NIT/DV** (si aplica) y **correo** correctos.  
-    👉 [Crear cliente / tercero](./crear-clientes.md)
-
-## 2) Requisitos previos
-- Prefijos/series **autorizados por DIAN** y vigentes.
-- **Tercero** creado correctamente (NIT/DV y correo válidos).
-- Permisos de usuario para **facturación**.
+!!! tip "Qué vas a lograr"
+    Generar y enviar **facturas electrónicas** a la **DIAN** desde el módulo administrativo **NDE**.
 
 !!! warning "Advertencia crítica"
-    Si el NIT/DV/correo del tercero es incorrecto, la DIAN **rechaza** el documento. Valida antes de emitir.
+    - Si el **NIT/DV/correo** del cliente es incorrecto, la DIAN **rechaza** la factura.  
+    - Verifica el tercero antes de emitir. 👉 [Crear/editar cliente](./crear-clientes.md)
+
+!!! info "Recordatorio"
+    - **Cantidad** en NDE **sí puede tener decimales** (según parametrización).
+    - Asegura **prefijo/serie** autorizado y vigente.
+    - Permisos de usuario para **facturación**.
 
 ---
 
@@ -38,7 +35,7 @@ Generar y enviar una **factura electrónica** a la **DIAN** desde el módulo adm
 
 ### A. Acceder a NDE
 Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**  
-![Acceso NDE](../../../assets/img/NDE/01-acceso-nde.png)
+![Acceso NDE](../../../assets/img/NDE/01-acceso-nde.png){ data-lb-group=nde }
 
 ### B. Encabezado del documento
 1. **Documento (prefijo/serie)**: selecciona desde la parametrización.  
@@ -191,7 +188,23 @@ Menú: **Ventas/Pedidos/Cotizaciones → Facturación/NDE**
 
 ---
 
-## Relacionados
-- 💡 ¿Prefieres mostrador? → [Facturar en POS](./factura-pos.md)
-- 🧾 ¿Actualizar datos del cliente? → [Crear/editar cliente](./crear-clientes.md)
-- ↩️ ¿Reversar total o parcial? → [Nota crédito (NCE)](./nota-credito-nce.md)
+!!! seealso "Guías relacionadas"
+
+    <div class="grid cards" markdown>
+
+    -   :material-account-plus: **Crear cliente / tercero** <span class="chip chip--ok">Básico</span>
+
+        NIT/DV y correo válidos para FE.
+        [:material-arrow-right: Ver guía](./crear-clientes.md)
+
+    -   :material-cash-register: **Facturar en POS** <span class="chip chip--ok">Básico</span>
+
+        Ventas rápidas en mostrador, pagos mixtos.
+        [:material-arrow-right: Ver guía](./factura-pos.md)
+
+    -   :material-file-restore: **NCE – Devolución/Nota crédito** <span class="chip chip--soon">Avanzado</span>
+    
+        Reversión con referencia o por período.
+        [:material-arrow-right: Ir al hub](./nce/index.md)
+
+    </div>

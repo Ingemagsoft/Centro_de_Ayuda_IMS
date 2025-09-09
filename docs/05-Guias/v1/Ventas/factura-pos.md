@@ -10,15 +10,24 @@ fecha_creacion: 2025-08-12
 ultimo_update: 2025-08-12
 url_relativa: /ventas/factura-pos
 ---
+<p class="chips">
+  <span class="chip chip--ok">v1</span>
+  <span class="chip chip--new">5–7 min</span>
+</p>
 
 # Cómo facturar en POS (Mostrador)
 
-## 1. Objetivo
-Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos mixtos**) y, si aplica, **generar factura electrónica** para la DIAN.
+!!! tip "Qué vas a lograr"
+    Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos mixtos**) y, si aplica, **generar factura electrónica** para la DIAN. 
 
-!!! info "Prerequisito"
+!!! info "Prerrequisito"
     El **cliente** debe existir y tener **NIT/DV** (si aplica) y **correo** válidos.  
     👉 [Crear cliente / tercero](./crear-clientes.md)
+
+!!! tip "Consejos rápidos"
+    - Ten lista la **lista de precios** correcta.  
+    - Para **pagos mixtos**, carga cada medio por separado y verifica que el total **cuadre**.
+
 
 ## 2. Requisitos previos
 - Rol con permisos de **POS / Caja**.
@@ -42,7 +51,7 @@ Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos 
    ![Elegir producto](../../../assets/img/POS/2_Elegir-producto.png)
 
 3) **Ingresar cantidad y valor → Cargar**  
-   > Nota: **Cantidad no acepta decimales** en POS.  
+  > **Nota:** en POS, **Cantidad no acepta decimales**.
    Define **Cant.**, **Vr. Unitario** e impuestos si aplica. Pulsa **Cargar**.  
 
    ![Cantidad y valor](../../../assets/img/POS/3_Cantidad-y-valor.png)
@@ -104,9 +113,9 @@ Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos 
 
 ## 5. Solución rápida a errores frecuentes
 
-- **Pago insuficiente / Totales no cuadran**  
-  **Causa:** el total de **pagos** no cubre el **total**.  
-  **Solución:** agrega otro pago (mixto) o ajusta valores hasta cuadrar.
+!!! warning "Pago insuficiente / totales no cuadran"
+    **Causa:** el total de pagos no cubre el total de la venta.  
+    **Solución:** agrega otro pago (mixto) o ajusta valores hasta cuadrar.
 
 - **Producto sin impuesto / tasa inválida**  
   **Causa:** impuesto del producto mal parametrizado.  
@@ -137,8 +146,23 @@ Emitir una venta **rápida** desde el **POS**, registrar pagos (incluye **pagos 
   Sí. Si faltan obligatorios, el sistema **bloquea el envío** y te pide completarlos.
 
 ---
+!!! seealso "Guías relacionadas"
 
-## Relacionados
-- 📨 ¿Necesitas factura electrónica administrativa? → [Emitir NDE](./factura-nde.md)
-- 🧾 ¿El cliente no existe aún? → [Crear cliente](./crear-clientes.md)
-- ↩️ ¿Devolver una venta? → [NCE](./nota-credito-nce.md)
+    <div class="grid cards" markdown>
+
+    -   :material-account-plus: **Crear cliente / tercero** <span class="chip chip--ok">Básico</span>
+
+        Datos correctos para evitar rechazos DIAN.
+        [:material-arrow-right: Ver guía](./crear-clientes.md)
+
+    -   :material-receipt: **Factura electrónica (NDE)** <span class="chip chip--ok">Básico</span>
+
+        Emisión administrativa con series/prefijos.
+        [:material-arrow-right: Ver guía](./factura-nde.md)
+
+    -   :material-file-restore: **NCE – Devolución/Nota crédito** <span class="chip chip--soon">Avanzado</span>
+    
+        Devoluciones a contado/crédito, con o sin referencia.
+        [:material-arrow-right: Ir al hub](./nce/index.md)
+
+    </div>
