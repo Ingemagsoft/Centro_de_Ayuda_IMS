@@ -51,3 +51,61 @@
   --mermaid-primary-color: #DE952C;
   --mermaid-font-color: #0D0D0D;
 }
+
+/* === Dark scheme: header neutro + acentos dorados === */
+[data-md-color-scheme="slate"] {
+  /* Acento dorado más suave para oscuro */
+  --md-primary-fg-color: #B47D1D;          /* dorado atenuado */
+  --md-accent-fg-color:  #DE952C;
+
+  /* Texto y fondo base */
+  --md-default-bg-color: #121212;
+  --md-default-fg-color: #EAEAEA;
+  --md-default-fg-color--light: #C8C8C8;
+}
+
+/* Header y tabs sin lámina dorada */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background: #171717 !important;          /* gris profundo */
+  box-shadow: 0 1px 0 rgba(255,255,255,.03);
+}
+[data-md-color-scheme="slate"] .md-header__inner,
+[data-md-color-scheme="slate"] .md-tabs__link {
+  color: #EDEDED !important;
+}
+
+/* Estado activo/hover con acento dorado discreto */
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-tabs__link:focus,
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #DE952C !important;
+}
+
+/* Sidebar: resalta el item activo con borde dorado tenue */
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:focus {
+  color: #EDEDED;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active::after {
+  border-color: #DE952C;
+  opacity: .5;
+}
+
+/* Admonitions suavizadas en oscuro */
+[data-md-color-scheme="slate"] .admonition.info,
+[data-md-color-scheme="slate"] details.info {
+  background:#1b2a38; border-color:#6FB7FF; color:#DCEEFF;
+}
+[data-md-color-scheme="slate"] .admonition.tip,
+[data-md-color-scheme="slate"] details.tip {
+  background:#0f2d22; border-color:#7BE3BE; color:#CFF8EA;
+}
+[data-md-color-scheme="slate"] .admonition.warning,
+[data-md-color-scheme="slate"] details.warning {
+  background:#2A200C; border-color:#DE952C; color:#FFE2B5;
+}
+[data-md-color-scheme="slate"] .admonition.example,
+[data-md-color-scheme="slate"] details.example {
+  background:#232323; border-color:#5B5B5B; color:#EDEDED;
+}
