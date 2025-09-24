@@ -39,3 +39,20 @@
 ## [1.0.4] - 2025-09-08
 ### Changed
 - Estilos nuevos aplicados a la guia y guias actuales
+
+## [1.0.5] - 2025-09-24
+### Added
+- **NCE – Contado (con referencia)**: guía completa con paso a paso, chips de estado, admonitions, y **8 capturas** en `assets/img/NCE/contado-ref/`.
+- Bloque **“Guías relacionadas”** en la guía de NCE (enlace a NDE, POS y Hub NCE).
+
+### Changed
+- Actualización del **nav** para agregar la ruta de NCE Contado con referencia (si aplica).
+- Ajustes de estilo (paleta IMS) en la nueva guía.
+
+### Fixed
+- Rutas de imágenes estandarizadas sin espacios (carpeta `contado-ref`).
+
+<!-- Enlaces de comparación (opcional)
+[Unreleased]: https://github.com/TU_USUARIO/TU_REPO/compare/1.0.4...HEAD
+[1.0.4]: https://github.com/TU_USUARIO/TU_REPO/compare/1.0.3...1.0.4
+-->
