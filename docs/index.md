@@ -30,14 +30,22 @@ Encuentra guías paso a paso, videos y novedades para nuestros 3 productos. Usa 
 ---
 ## Rutas rápidas
 <div class="grid cards" markdown>
--   :material-rocket-launch: **Empieza aquí**
+-   :material-account-plus: **Crear cliente** <span class="chip chip--ok">Básico</span>
     ---
-    Primeros pasos, requisitos y configuración básica para cada sector.
-    **[Ver guía general »](getting-started.md)**
--   :material-newspaper-variant-outline: **Novedades**
+    Datos correctos para evitar rechazos DIAN.  
+    **[Ver guía »](05-Guias/v1/Ventas/crear-clientes.md)**
+-   :material-cash-register: **Facturar en POS** <span class="chip chip--ok">Básico</span>
     ---
-    Cambios recientes, mejoras y avisos importantes.
-    **[Ir a Novedades »](../updates/index.md)**
+    Ventas de mostrador con pagos mixtos.  
+    **[Ver guía »](05-Guias/v1/Ventas/factura-pos.md)**
+-   :material-receipt: **Factura electrónica (NDE)** <span class="chip chip--ok">Básico</span>
+    ---
+    Emite y envía a DIAN desde el módulo administrativo.  
+    **[Ver guía »](05-Guias/v1/Ventas/factura-nde.md)**
+-   :material-file-restore: **NCE – Contado con referencia** <span class="chip chip--new">Nuevo</span>
+    ---
+    Reversa ventas de contado referenciando la factura.  
+    **[Ver guía »](05-Guias/v1/Ventas/nce/contado-ref.md)**
 </div>
 
 ---
