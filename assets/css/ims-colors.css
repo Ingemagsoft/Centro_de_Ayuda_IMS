@@ -1,0 +1,111 @@
+/* ===== Paleta IMS ===== */
+:root {
+  --md-primary-fg-color:        #DE952C;   /* Dorado */
+  --md-primary-fg-color--light: #f5c979;   /* Dorado claro */
+  --md-primary-fg-color--dark:  #a06b1d;   /* Dorado oscuro */
+
+  --md-accent-fg-color:         #DE952C;   /* Usamos el mismo dorado como acento */
+  --md-accent-fg-color--light:  #f8d48e;
+  --md-accent-fg-color--dark:   #a06b1d;
+
+  --md-default-bg-color:        #FBFFFF;   /* Fondo claro */
+  --md-default-fg-color:        #0D0D0D;   /* Texto oscuro */
+  --md-default-fg-color--light: #444;      /* Texto secundario */
+  --md-default-fg-color--lighter: #666;    /* Subtexto */
+
+  --md-code-bg-color:           #f9f9f9;   /* Fondo bloques código */
+  --md-code-fg-color:           #0D0D0D;   /* Texto código */
+}
+
+/* ===== Admonitions con paleta IMS ===== */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #1b7f4a;
+}
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #DE952C;
+  background-color: #fff6eb;
+}
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: #2a6ebb;
+  background-color: #eef6ff;
+}
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: #888;
+  background-color: #f5f5f5;
+}
+
+/* ===== Chips de estado ===== */
+.chip--ok    { background:#e6f6ec; color:#1b7f4a; }
+.chip--new   { background:#eef6ff; color:#2a6ebb; }
+.chip--soon  { background:#fff6eb; color:#a06b1d; }
+
+/* Mermaid integrando paleta IMS */
+:root {
+  --mermaid-theme: neutral;
+  --mermaid-node-bg: #FBFFFF;
+  --mermaid-node-border: #DE952C;
+  --mermaid-primary-color: #DE952C;
+  --mermaid-font-color: #0D0D0D;
+}
+
+/* === Dark scheme: header neutro + acentos dorados === */
+[data-md-color-scheme="slate"] {
+  /* Acento dorado más suave para oscuro */
+  --md-primary-fg-color: #B47D1D;          /* dorado atenuado */
+  --md-accent-fg-color:  #DE952C;
+
+  /* Texto y fondo base */
+  --md-default-bg-color: #121212;
+  --md-default-fg-color: #EAEAEA;
+  --md-default-fg-color--light: #C8C8C8;
+}
+
+/* Header y tabs sin lámina dorada */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background: #171717 !important;          /* gris profundo */
+  box-shadow: 0 1px 0 rgba(255,255,255,.03);
+}
+[data-md-color-scheme="slate"] .md-header__inner,
+[data-md-color-scheme="slate"] .md-tabs__link {
+  color: #EDEDED !important;
+}
+
+/* Estado activo/hover con acento dorado discreto */
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-tabs__link:focus,
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #DE952C !important;
+}
+
+/* Sidebar: resalta el item activo con borde dorado tenue */
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:focus {
+  color: #EDEDED;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active::after {
+  border-color: #DE952C;
+  opacity: .5;
+}
+
+/* Admonitions suavizadas en oscuro */
+[data-md-color-scheme="slate"] .admonition.info,
+[data-md-color-scheme="slate"] details.info {
+  background:#1b2a38; border-color:#6FB7FF; color:#DCEEFF;
+}
+[data-md-color-scheme="slate"] .admonition.tip,
+[data-md-color-scheme="slate"] details.tip {
+  background:#0f2d22; border-color:#7BE3BE; color:#CFF8EA;
+}
+[data-md-color-scheme="slate"] .admonition.warning,
+[data-md-color-scheme="slate"] details.warning {
+  background:#2A200C; border-color:#DE952C; color:#FFE2B5;
+}
+[data-md-color-scheme="slate"] .admonition.example,
+[data-md-color-scheme="slate"] details.example {
+  background:#232323; border-color:#5B5B5B; color:#EDEDED;
+}
