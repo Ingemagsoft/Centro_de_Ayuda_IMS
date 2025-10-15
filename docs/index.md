@@ -8,7 +8,10 @@ hide:
 
 # Bienvenido a **IMS – Centro de Ayuda**
 
-Encuentra guías paso a paso, videos y novedades para nuestros 3 productos. Usa la barra de **búsqueda** arriba o entra por producto:
+<div class="hc-search" role="button" tabindex="0" onclick="IMS.openSearch()" onkeydown="IMS.keyOpen(event)">
+  <span class="hc-search__icon">🔍</span>
+  <span class="hc-search__placeholder">Busca cualquier tema…</span>
+</div>
 
 :material-clock-outline: Tiempo promedio por guía: **5–7 min**
 
