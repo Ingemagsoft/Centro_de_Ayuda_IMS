@@ -3,17 +3,29 @@ title: Centro de Ayuda IMS
 hide:
   - toc
 ---
-<div class="hero" markdown>
+<div class="hc-hero" markdown>
 ![IMS](assets/img/logos/Logo-fondo-blanco.png){ width=160 loading=lazy }
 
 # Bienvenido a **IMS – Centro de Ayuda**
-
-<div class="hc-search" role="button" tabindex="0" onclick="IMS.openSearch()" onkeydown="IMS.keyOpen(event)">
-  <span class="hc-search__icon">🔍</span>
-  <span class="hc-search__placeholder">Busca cualquier tema…</span>
+---
+<div class="hc-chips">
+  <a href="#" class="hc-chip" data-query="Facturar POS" onclick="IMS.openSearch('Facturar POS')">POS</a>
+  <a href="#" class="hc-chip" data-query="Factura electrónica NDE" onclick="IMS.openSearch('Factura electrónica NDE')">Factura electrónica</a>
+  <a href="#" class="hc-chip" data-query="Inventario" onclick="IMS.openSearch('Inventario')">Inventario</a>
+  <a href="#" class="hc-chip" data-query="Clientes" onclick="IMS.openSearch('Clientes')">Clientes</a>
 </div>
 
-:material-clock-outline: Tiempo promedio por guía: **5–7 min**
+<!--<div class="hc-hero" markdown>
+
+<div id="hc-search" class="hc-search-local">
+  <span class="hc-search__icon">🔍</span>
+  <input id="hc-input" type="search" placeholder="Busca cualquier tema…"
+         aria-label="Buscar en el Centro de Ayuda IMS" autocomplete="off" />
+</div>
+
+<div id="hc-results" class="hc-results"></div> 
+
+</div> -->
 
 <div class="grid cards" markdown>
 -   :material-factory: **Pyme**

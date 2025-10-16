@@ -26,3 +26,63 @@
   text-align: center;
   margin-top: 1rem;
 }
+
+/* ===== Hero + buscador centrado ===== */
+
+/* Hero */
+.hc-hero{ text-align:center; margin:1.2rem 0 2rem; }
+.hc-hero h1{ font-size: clamp(1rem,3vw,2rem); }
+
+/* Search pill */
+.hc-search-local{
+  display:flex; align-items:center; gap:.6rem; margin:0 auto 1rem;
+  padding:.50rem 1rem; border-radius:999px; max-width:860px; width:92%;
+  background: var(--md-default-bg-color); border:1px solid rgba(0,0,0,.08);
+}
+[data-md-color-scheme="slate"] .hc-search-local{
+  background:#1b1b1b; border-color:#2a2a2a;
+}
+.hc-search__icon{ opacity:.7; }
+#hc-input{
+  flex:1; font-size:1rem; background:transparent; border:0; outline:0; color:var(--md-default-fg-color);
+}
+
+/* Chips */
+.hc-chips{ display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin:.5rem auto 1.5rem; }
+.hc-chip{
+  padding:.2rem .85rem; border-radius:999px; cursor:pointer; user-select:none;
+  background:#fff6eb; color:#A06B1D; border:1px solid #f1e0c7; text-decoration:none;
+}
+.hc-chip:hover{ background:#fdebd1; }
+[data-md-color-scheme="slate"] .hc-chip{ background:#2A200C; color:#FFD599; border-color:#3a2f16; }
+
+/* Results */
+.hc-results{ max-width:860px; width:92%; margin:0 auto; }
+.hc-result{
+  display:block; padding:.9rem 1rem; border-radius:.75rem; margin:.5rem 0;
+  background:rgba(0,0,0,.02); border:1px solid rgba(0,0,0,.06);
+}
+[data-md-color-scheme="slate"] .hc-result{
+  background:#171717; border-color:#2a2a2a;
+}
+.hc-result__title{ margin:0 0 .25rem; font-weight:600; }
+.hc-result__snippet{ margin:0; opacity:.8; }
+
+/* --- Ajuste de la barra lateral derecha (ToC) --- */
+.md-sidebar--secondary {
+  flex: 0 0 240px;        /* 👈 ancho fijo más estrecho (default suele ser 300px) */
+  max-width: 220px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08); /* línea divisoria sutil */
+  padding-left: 1.2rem;
+}
+
+/* En modo oscuro, línea más suave */
+[data-md-color-scheme="slate"] .md-sidebar--secondary {
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Opcional: ajustar el ancho del contenido principal para ganar espacio --- */
+.md-content {
+  max-width: 900px;       /* reduce ligeramente el ancho total del contenido */
+  margin: 0 auto;
+}
