@@ -57,10 +57,11 @@ plugins:
   - mermaid2              # para diagramas Mermaid
   - social:
       enabled: !ENV [IMS_SOCIAL, false]   # OFF por defecto (si variable de entorno IMS_SOCIAL está a true, se activa)
-      cards_logo: assets/img/logos/logo_ims_blanco.png
-      cards_color:
-        fill: "#0F6CBD"
-        text: "#FFFFFF"
+      cards_layout_options:
+        color: "#0F6CBD"
+        background_color: "#0F6CBD"
+        text_color: "#FFFFFF"
+        logo: assets/img/logos/logo_ims_blanco.png
 
 
 markdown_extensions:
