@@ -1,14 +1,23 @@
 ---
+# ——— SEO / Social ———
+title: "Cómo crear un cliente (tercero)"
+description: "Registra un nuevo cliente o tercero para emitir facturas electrónicas sin errores DIAN."
+image: assets/img/logos/logo.png
+
+# ——— Metadatos internos ———
 id_articulo: ventas_crear_cliente
+producto: pyme
 modulo: Ventas/Pedidos/Cotizaciones
 submodulo: Creación de clientes
-titulo: Cómo crear un cliente (tercero)
+titulo: "Cómo crear un cliente (tercero)"
 version: v1
-palabras_clave: cliente, tercero, nit, dv, correo, direccion, condiciones de venta
+palabras_clave: [cliente, tercero, nit, correo, condiciones de venta]
 nivel_usuario: todos
 fecha_creacion: 2025-08-20
-ultimo_update: 2025-08-20
+ultimo_update: 2025-10-17
 url_relativa: /ventas/terceros/crear
+tags: [ventas, clientes, dian]
+author: "IMS Docs"
 ---
 
 <p class="chips">
@@ -202,7 +211,7 @@ Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar 
     -   :material-file-restore: **Nota crédito electrónica (NCE)**  <span class="chip chip--soon">Avanzado</span>
 
         Anula o corrige facturas con notas crédito.  
-        [:material-arrow-right: Ver guía](./nota-credito-nce.md)
+        [:material-arrow-right: Ver guía](./contado-ref.md)
 
     </div>
 

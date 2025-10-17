@@ -1,15 +1,25 @@
 ---
+# ——— SEO / Social ———
+title: "Factura electrónica (NDE)"
+description: "Emite facturas electrónicas desde el módulo NDE y envíalas a la DIAN."
+image: assets/img/logos/logo.png
+
+# ——— Metadatos internos ———
 id_articulo: ventas_nde_facturar
+producto: pyme
 modulo: Ventas/Pedidos/Cotizaciones
 submodulo: Facturación/NDE
-titulo: Cómo emitir una factura electrónica (NDE)
+titulo: "Factura electrónica (NDE)"
 version: v1
-palabras_clave: nde, factura electrónica, dian, ventas
+palabras_clave: [nde, factura, dian, ventas, electronica]
 nivel_usuario: todos
 fecha_creacion: 2025-08-12
-ultimo_update: 2025-08-12
+ultimo_update: 2025-10-17
 url_relativa: /ventas/nde/facturar
+tags: [ventas, nde, dian]
+author: "IMS Docs"
 ---
+
 <p class="chips">
   <span class="chip chip--ok">v1</span>
   <span class="chip chip--new">5–7 min</span>

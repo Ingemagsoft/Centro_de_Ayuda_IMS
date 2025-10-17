@@ -1,17 +1,23 @@
 ---
-title: NCE – Contado (con referencia a la factura)
+# ——— SEO / Social ———
+title: "Nota crédito electrónica (NCE) – Contado con referencia"
+description: "Emite una Nota Crédito Electrónica referenciando una factura de contado y envíala a la DIAN."
+image: assets/img/logos/logo.png
+
+# ——— Metadatos internos ———
 id_articulo: ventas_nce_contado_ref
 producto: pyme
 modulo: Ventas/Pedidos/Cotizaciones
 submodulo: Devolución Facturación / NCE
-titulo: NCE de factura a Contado (con referencia)
+titulo: "Nota crédito electrónica (NCE) – Contado con referencia"
 version: v1
 palabras_clave: [nce, nota credito, devolucion, contado, referencia, dian]
 nivel_usuario: todos
 fecha_creacion: 2025-09-24
-ultimo_update: 2025-09-24
+ultimo_update: 2025-10-17
 url_relativa: /ventas/nce/contado-ref
-tags: [ventas, nce]
+tags: [ventas, nce, dian]
+author: "IMS Docs"
 ---
 
 <p class="chips">

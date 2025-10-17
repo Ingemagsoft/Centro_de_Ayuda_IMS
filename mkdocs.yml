@@ -55,6 +55,13 @@ theme:
 plugins:
   - search                # búsqueda interna
   - mermaid2              # para diagramas Mermaid
+  - social:
+      enabled: !ENV [IMS_SOCIAL, false]   # OFF por defecto (si variable de entorno IMS_SOCIAL está a true, se activa)
+      cards_logo: assets/img/logos/logo_ims_blanco.png
+      cards_color:
+        fill: "#0F6CBD"
+        text: "#FFFFFF"
+
 
 markdown_extensions:
   - admonition
@@ -79,10 +86,31 @@ nav:
   - Home: index.md
   - Pyme:
       - Empieza aquí: pyme/index.md
-      - Procesos básicos:
-          - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
-          - Facturar (NDE): 05-Guias/v1/Ventas/factura-nde.md
-          - Facturar en POS: 05-Guias/v1/Ventas/factura-pos.md
+      - Parametrizacion:
+          - Fichas:
+            - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
+            - Facturar (NDE): 05-Guias/v1/Ventas/factura-nde.md
+            - Facturar en POS: 05-Guias/v1/Ventas/factura-pos.md
+      #    - Productos:
+      #      - Listas de precios: 05-Guias/v1/Ventas/listas-precios.md
+      #      - Tipos de listas: 05-Guias/v1/Ventas/tipos-listas.md
+      #      - Listas de costos: 05-Guias/v1/Ventas/listas-costos.md
+      #- Inventario y facturacion:
+      #    - Facturacion:
+      #      - Facturar en POS: 05-Guias/v1/Ventas/factura-pos.md
+      #      - Facturar (NDE): 05-Guias/v1/Ventas/factura-nde.md
+      #      - Crear cliente: 05-Guias/v1/Ventas/crear-clientes.md
+      #      - Nota crédito (hub): 05-Guias/v1/Ventas/nce/index.md            
+      #    - Inventario:
+      #      - Compras POS: 05-Guias/v1/Ventas/listas-precios.md
+      #      - Entrada de mercancia: 05-Guias/v1/Ventas/tipos-listas.md
+      #      - Salida de mercancia: 05-Guias/v1/Ventas/listas-costos.md
+      #- Informes:
+      #    - Inf. Mto productos x ventas: 06-Informes/v1/Productos/mto-productos-x-ventas.md
+      #    - Inf. de documentos: 06-Informes/v1/Documentos/inf-documentos.md
+      #    - Inf. Kardex: 06-Informes/v1/Inventario/inf-kardex.md
+      #    - Inf. Inventario: 06-Informes/v1/Inventario/inf-inventario.md
+      #    - Inf. Mto de terceros: 06-Informes/v1/Terceros/mto-terceros.md
       - Procesos adicionales:
           - Nota crédito (hub): 05-Guias/v1/Ventas/nce/index.md
           - Nota crédito – Contado (ref): 05-Guias/v1/Ventas/nce/contado-ref.md

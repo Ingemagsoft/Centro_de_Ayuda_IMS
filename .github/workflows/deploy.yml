@@ -14,22 +14,41 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  CI: "true"
+  IMS_SOCIAL: "true"   # habilita plugin social en CI
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-      - name: Install MkDocs
-        run: pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin
-      - name: Build site
+          python-version: '3.13'
+
+      - name: System deps for CairoSVG
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libcairo2 libpango-1.0-0 libpangocairo-1.0-0 \
+            libgdk-pixbuf2.0-0 libffi-dev
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build (strict)
         run: mkdocs build --strict
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./site
+          path: site
 
   deploy:
     needs: build

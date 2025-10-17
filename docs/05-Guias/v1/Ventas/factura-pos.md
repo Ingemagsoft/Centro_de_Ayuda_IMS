@@ -1,15 +1,25 @@
 ---
+# ——— SEO / Social ———
+title: "Factura electrónica POS (Mostrador)"
+description: "Emite una factura electrónica en mostrador y envíala a la DIAN fácilmente."
+image: assets/img/logos/logo.png
+
+# ——— Metadatos internos ———
 id_articulo: ventas_pos_facturar
+producto: pyme
 modulo: Ventas/Pedidos/Cotizaciones
 submodulo: POS
-titulo: Cómo facturar en POS (Mostrador)
+titulo: "Factura electrónica POS (Mostrador)"
 version: v1
-palabras_clave: pos, mostrador, caja, pagos mixtos, factura
+palabras_clave: [pos, mostrador, caja, pagos mixtos, factura]
 nivel_usuario: todos
 fecha_creacion: 2025-08-12
-ultimo_update: 2025-08-12
-url_relativa: /ventas/factura-pos
+ultimo_update: 2025-10-17
+url_relativa: /ventas/pos/factura-pos
+tags: [ventas, pos, dian]
+author: "IMS Docs"
 ---
+
 <p class="chips">
   <span class="chip chip--ok">v1</span>
   <span class="chip chip--new">5–7 min</span>

@@ -2,18 +2,20 @@
 title: Centro de Ayuda IMS
 hide:
   - toc
+  - navigation
 ---
 <div class="hc-hero" markdown>
 ![IMS](assets/img/logos/Logo-fondo-blanco.png){ width=160 loading=lazy }
 
-# Bienvenido a **IMS – Centro de Ayuda**
----
+# **Bienvenido a IMS – Centro de Ayuda**
+
 <div class="hc-chips">
   <a href="#" class="hc-chip" data-query="Facturar POS" onclick="IMS.openSearch('Facturar POS')">POS</a>
   <a href="#" class="hc-chip" data-query="Factura electrónica NDE" onclick="IMS.openSearch('Factura electrónica NDE')">Factura electrónica</a>
   <a href="#" class="hc-chip" data-query="Inventario" onclick="IMS.openSearch('Inventario')">Inventario</a>
   <a href="#" class="hc-chip" data-query="Clientes" onclick="IMS.openSearch('Clientes')">Clientes</a>
 </div>
+---
 
 <!--<div class="hc-hero" markdown>
 
