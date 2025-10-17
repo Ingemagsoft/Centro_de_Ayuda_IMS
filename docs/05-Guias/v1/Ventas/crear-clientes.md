@@ -43,7 +43,7 @@ Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar 
 !!! tip "¿Dónde se usa este tercero?"
     - 💡 **Facturación POS** → [Facturar en POS](./factura-pos.md)  
     - 📨 **Factura electrónica (NDE)** → [Emitir NDE](./factura-nde.md)  
-    - ↩️ **Devolución / Nota crédito** → [NCE](./nota-credito-nce.md)
+    - ↩️ **Devolución / Nota crédito** → (Nota credito NCE - Proximamente)
 
 > Si creas el tercero desde NDE o POS con **Crear tercero**, es el **mismo formulario** y se guarda en la **misma base**.
 
@@ -211,7 +211,7 @@ Registrar correctamente un **tercero** (cliente/proveedor/contable) para evitar 
     -   :material-file-restore: **Nota crédito electrónica (NCE)**  <span class="chip chip--soon">Avanzado</span>
 
         Anula o corrige facturas con notas crédito.  
-        [:material-arrow-right: Ver guía](./contado-ref.md)
+        [:material-arrow-right: Ver guía](./nce/contado-ref.md)
 
     </div>
 
